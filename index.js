@@ -16,7 +16,12 @@ function initDraw() {
  * @return {Boolean} True vẽ + False vẽ
  */
 function drawPoint(row, col) {
-  return true;
+  //return true;
+  if (row % 2 ===0) {
+    return col % 2 === 0;
+  } else {
+    return col % 2 !== 0;
+  }
 }
 /***
  *
