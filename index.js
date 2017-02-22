@@ -32,7 +32,10 @@ function drawStar(rowIndex, colIndex) {
 function drawBox(rowIndex, colIndex, rows, length) {
   let thick = 2;
   return (rowIndex < thick || rowIndex >= rows - thick || colIndex < thick || colIndex >= length - thick);
+}
 
+function drawCross(rowIndex, colIndex) {
+  return (rowIndex === colIndex);
 }
 
 
