@@ -8,8 +8,8 @@
 let rows, cols;
 
 function initDraw() {
-  rows = 20;
-  cols = 20;
+  rows = 10;
+  cols = 10;
 }
 /***
  *
@@ -46,6 +46,8 @@ function drawLine(rowIndex, cols, drawFunction) {
   }
   return str;
 }
+
+
 function drawEverything() {
   //TODO: Nhập dữ liệu từ người dùng
 
@@ -54,7 +56,7 @@ function drawEverything() {
   initDraw();
 
   for (let i = 0; i < rows; i++) {
-    console.log(drawLine(i, cols, drawBox));
+    console.log(drawLine(i, cols, drawStar));
   }
 }
 
